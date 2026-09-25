@@ -5,18 +5,18 @@ interface Countries {
 }
 
 interface PowerSource {
-  Lignite: 1223;
-  Nuclear: 1224;
-  Wind: 1225;
-  Water: 1226;
-  Renewable: 1228;
-  NaturalGas: 4071;
+  Lignite: number;
+  Nuclear: number;
+  Wind: number;
+  Water: number;
+  Renewable: number;
+  NaturalGas: number;
 }
 
 interface Timestamps {
-  hour: 'hour';
-  day: 'day';
-  week: 'week';
-  month: 'month';
-  year: 'year';
+  hour: string;
+  day: string;
+  week: string;
+  month: string;
+  year: string;
 }
