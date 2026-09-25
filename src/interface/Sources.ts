@@ -14,9 +14,9 @@ interface PowerSource {
 }
 
 interface Timestamps {
-  hour: string;
-  day: string;
-  week: string;
-  month: string;
-  year: string;
+  hour: 'hour';
+  day: 'day';
+  week: 'week';
+  month: 'month';
+  year: 'year';
 }
