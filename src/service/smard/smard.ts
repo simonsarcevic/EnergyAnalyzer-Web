@@ -14,7 +14,7 @@ export class Smard {
   }
 
 
-  getAllSources(){
+  getAllSources(timestamp: string){
     const power: PowerSource = {
       Lignite: 1223,
       Nuclear: 1224,
@@ -25,7 +25,7 @@ export class Smard {
     };
 
     for (const item in Object.values(power)) {
-      this.http.get(this.baseUrl + item + '/DE/index_hour.json');
+      this.http.get(this.baseUrl + item + `/DE/index_${timestamp}.json`);
     }
   }
 

@@ -12,3 +12,11 @@ interface PowerSource {
   Renewable: 1228;
   NaturalGas: 4071;
 }
+
+interface Timestamps {
+  hour: string;
+  day: string;
+  week: string;
+  month: string;
+  year: string;
+}
