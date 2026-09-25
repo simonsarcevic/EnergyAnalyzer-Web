@@ -1,1 +1,21 @@
 /* You can add global styles to this file, and also import other style files */
+body {
+  margin: 0;
+  background-color: rgba(248, 250, 252, 1.00);
+}
+:host {
+  display: block;
+  width: fit-content;
+  height: fit-content;
+  max-width: 80vw;
+  max-height: 80vh;
+}
+
+.mat-dialog-content {
+  overflow: auto;
+}
+
+.mat-dialog-container {
+  min-width: 0 !important;
+  padding: 16px;
+}
