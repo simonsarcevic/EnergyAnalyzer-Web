@@ -22,8 +22,9 @@ export class Smard {
       NaturalGas: 4071
     };
 
-    for (const item in Object.values(power)) {
-      this.http.get(this.baseUrl + item + `/DE/index_hour.json`);
+    for (const item of Object.values(power)) {
+      this.http.get(this.baseUrl + item + `/DE/index_hour.json`)
+        .subscribe(data => console.log(data));
     }
   }
 
@@ -37,7 +38,7 @@ export class Smard {
       NaturalGas: 4071
     };
 
-    for (const item in Object.values(power)) {
+    for (const item of Object.values(power)) {
       this.http.get(this.baseUrl + item + `/DE/index_${timestamp}.json`);
     }
   }
