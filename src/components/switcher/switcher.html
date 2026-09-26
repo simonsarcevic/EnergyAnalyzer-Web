@@ -1,0 +1,6 @@
+<div class="container">
+  <button class="btn" (click)="setActive('Heute')" [class.active]="active == 'Heute'">Heute</button>
+  <button class="btn" (click)="setActive('7 Tage')" [class.active]="active == '7 Tage'">7 Tage</button>
+  <button class="btn" (click)="setActive('30 Tage')" [class.active]="active == '30 Tage'">30 Tage</button>
+  <button class="btn" (click)="setActive('1 Jahr')" [class.active]="active == '1 Jahr'">1 Jahr</button>
+</div>
